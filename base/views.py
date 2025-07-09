@@ -1,5 +1,8 @@
 from django.shortcuts import render
 
 # Create your views here.
-def hello(request):
-    return render()
+def home(request):
+    return render(request, 'index.html')
+
+def type_list (request):
+    return render(request, 'type_list.html')
